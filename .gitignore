@@ -1,0 +1,7 @@
+
+/.vs
+/packages
+/PolySharpFeatureDemo/obj
+/PolySharpFeatureDemo/bin
+/PolySharpFeatureTests/bin
+/PolySharpFeatureTests/obj
