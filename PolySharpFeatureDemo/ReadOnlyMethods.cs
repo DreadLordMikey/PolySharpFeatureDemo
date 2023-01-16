@@ -62,5 +62,21 @@
                 return false;
             }
         }
+
+        public static void Execute()
+        {
+            var x = new ReadOnlyStruct(5, 10);
+
+            Debug.WriteLine($"x.X = {x.X}, x.Y = {x.Y}");
+            Debug.WriteLine($"x.Sum: {x.Sum()}");
+
+            var x2 = x.Swap();
+            Debug.WriteLine($"x.Swap() = x2.X = {x2.X}, x2.Y = {x2.Y}");
+
+            var succeeded = x.TryCompute(out int result);
+            Debug.WriteLine($"x.TryCompute(out int result) = {succeeded}");
+            Debug.WriteLine($"result = {result}");
+            Debug.WriteLine("");
+        }
     }
 }

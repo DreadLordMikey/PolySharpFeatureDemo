@@ -6,11 +6,14 @@ namespace PolySharpFeatures
 {
     internal class StaticLocalFunctions
     {
-        public string GetText(string path, string filename)
+        public string GetFilePath(string path, string filename)
         {
-            var reader = File.OpenText($"{AppendPathSeparator(path)}{filename}");
-            var text = reader.ReadToEnd();
-            return text;
+            Debug.WriteLine("StaticLocalFunctions");
+            var fixedPath = AppendPathSeparator(path);
+            Debug.WriteLine($"AppendPathSeparatorResult: {fixedPath}");
+            Debug.WriteLine("");
+
+            return $"{fixedPath}{filename}";
 
             // In versions of C# prior to 8.0, local functions could not be 
             // static. In version 8 and later, local functions can be static.
@@ -19,6 +22,12 @@ namespace PolySharpFeatures
             {
                 return filepath.EndsWith(@"\") ? filepath : filepath + @"\";
             }
+        }
+
+        public static void Execute()
+        {
+            var slf = new StaticLocalFunctions();
+            slf.GetFilePath("C:\\Dev\\Solutions", "PolySharpFeatureDemo.sln");
         }
     }
 }

@@ -1,30 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Security.Cryptography.X509Certificates;
 
 namespace PolySharpFeatures
 {
     public class PatternMatchingEnhancements
     {
-        public string IsType(object greeting)
+        public void IsTypeDemo(object greeting)
         {
+            Debug.WriteLine("PatternMatchingEnhancements.IsTypeDemo");
+
             if (greeting is string message)
             {
-                return message.ToLower();
+                Debug.WriteLine(message);
+                Debug.WriteLine("");
+                return;
             }
 
-            return null;
+            Debug.WriteLine("Not a string greeting.");
+            Debug.WriteLine("");
         }
 
-        public int IsTypeInSwitch_ForInt()
+        public void IsTypeInSwitch_ForIntDemo()
         {
+            Debug.WriteLine("PatternMatchingEnhancements.IsTypeInSwitch_ForIntDemo");
             var numbers = new int[] { 10, 20, 30 };
-            return GetSourceLabel(numbers);  // output: 1
+            Debug.WriteLine(GetSourceLabel(numbers));
+            Debug.WriteLine("");
         }
 
-        public int IsTypeInSwitch_ForChar() 
-        { 
+        public void IsTypeInSwitch_ForCharDemo() 
+        {
+            Debug.WriteLine("PatternMatchingEnhancements.IsTypeInSwitch_ForCharDemo");
             var letters = new List<char> { 'a', 'b', 'c', 'd' };
-            return GetSourceLabel(letters);  // output: 2
+            Debug.WriteLine(GetSourceLabel(letters));
+            Debug.WriteLine("");
         }
 
         int GetSourceLabel<T>(IEnumerable<T> source) => source switch
@@ -34,5 +42,12 @@ namespace PolySharpFeatures
             _ => 3,
         };
 
+        public static void Execute()
+        {
+            var pme = new PatternMatchingEnhancements();
+            pme.IsTypeDemo("Hello, World!");
+            pme.IsTypeInSwitch_ForIntDemo();
+            pme.IsTypeInSwitch_ForCharDemo();
+        }
     }
 }

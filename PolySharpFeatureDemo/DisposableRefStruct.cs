@@ -11,13 +11,13 @@ namespace PolySharpFeatures
     // Uncomment the interface implementation below to see how ref structs cannot implement interfaces. This has
     // been true since ref structs were introduced in C# 7.2.
 
-    public ref struct ReferralClaim // : IDisposable
+    public ref struct DisposableRefStruct // : IDisposable
     {
         public int X;
         public int Y;
         private bool isDisposed = false;
 
-        public ReferralClaim (int x, int y)
+        public DisposableRefStruct (int x, int y)
         {
             this.X = x;
             this.Y = y;
@@ -35,6 +35,15 @@ namespace PolySharpFeatures
 
             // Dispose implementation goes here.
             isDisposed = true;
+        }
+
+        public static void Execute()
+        {
+            using (var s = new DisposableRefStruct(5, 10))
+            {
+
+            }
+                
         }
     }
 }

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolySharpFeatureTests", "PolySharpFeatureTests\PolySharpFeatureTests.csproj", "{6DC26F7E-B183-41A1-82BB-4D02C1AFB72E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolySharpFeatureDemo", "PolySharpFeatureDemo\PolySharpFeatureDemo.csproj", "{88072344-5F6C-4E65-9C16-AF377E55B21D}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6DC26F7E-B183-41A1-82BB-4D02C1AFB72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DC26F7E-B183-41A1-82BB-4D02C1AFB72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DC26F7E-B183-41A1-82BB-4D02C1AFB72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DC26F7E-B183-41A1-82BB-4D02C1AFB72E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88072344-5F6C-4E65-9C16-AF377E55B21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88072344-5F6C-4E65-9C16-AF377E55B21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88072344-5F6C-4E65-9C16-AF377E55B21D}.Release|Any CPU.ActiveCfg = Release|Any CPU

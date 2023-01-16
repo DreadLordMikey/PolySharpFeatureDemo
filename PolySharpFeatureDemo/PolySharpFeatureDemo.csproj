@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{88072344-5F6C-4E65-9C16-AF377E55B21D}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PolySharpFeatures</RootNamespace>
     <AssemblyName>PolySharpFeatures</AssemblyName>
@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PolySharpFeatures.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,12 +49,14 @@
   <ItemGroup>
     <Compile Include="DefaultInterfaceMembers.cs" />
     <Compile Include="GlobalUsings.cs" />
+    <Compile Include="NullableReferenceTypes.cs" />
     <Compile Include="PatternMatchingEnhancements.cs" />
     <Compile Include="PolyFills.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="ReadOnlyMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GlobalUsingsDemo.cs" />
-    <Compile Include="DisposableRefStructs.cs" />
+    <Compile Include="DisposableRefStruct.cs" />
     <Compile Include="StaticLocalFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
