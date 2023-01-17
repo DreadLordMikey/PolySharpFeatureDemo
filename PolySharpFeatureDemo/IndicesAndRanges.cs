@@ -37,25 +37,35 @@
             Debug.WriteLine("any type that exposes a Count or Length property and a Splice(int, int) method. This also");
             Debug.WriteLine("includes through extension methods.");
 
-            //var numbers = new[] { 0, 10, 20, 30, 40, 50 };
-            //Span<int> span = numbers;
+            ReadOnlySpan<int> numbers = new[] { 0, 10, 20, 30, 40, 50 };
 
-            //int start = 1;
-            //int amountToTake = 3;
-            //var subset = numbers[start..(start + amountToTake)];
-            //Display(subset);  // output: 10 20 30
+            int start = 1;
+            int amountToTake = 3;
+            DoCase1(numbers, start, amountToTake);
 
-            //int margin = 1;
-            //int[] inner = numbers[margin..^margin];
-            //Display(inner);  // output: 10 20 30 40
+            int margin = 1;
+            ReadOnlySpan<int> inner = numbers[margin..^margin];
+            Display(inner.ToArray());  // output: 10 20 30 40
 
-            //string line = "one two three";
-            //int amountToTakeFromEnd = 5;
-            //Range endIndices = ^amountToTakeFromEnd..^0;
-            //string end = line[endIndices];
-            //Debug.WriteLine(end);  // output: three
+            string line = "one two three";
+            int amountToTakeFromEnd = 5;
+            Range endIndices = ^amountToTakeFromEnd..^0;
+            string end = line[endIndices];
+            Debug.WriteLine(end);  // output: three
 
-            //void Display<T>(IEnumerable<T> xs) => Debug.WriteLine(string.Join(" ", xs));
+            void DoCase1(ReadOnlySpan<int> numbers, int start, int end)
+            {
+               Debug.WriteLine($"int start = {start};");
+               Debug.WriteLine($"int end = {end};");
+               Debug.WriteLine("var subset = numbers[start...(start + amountToTake)];");
+
+               var result = numbers[start..(start + amountToTake)];
+               Display(result.ToArray());
+               Debug.WriteLine("");
+            }
+
+            void Display<T>(IEnumerable<T> xs) => Debug.WriteLine(string.Join(" ", xs));
+
 
             Debug.WriteLine("");
         }

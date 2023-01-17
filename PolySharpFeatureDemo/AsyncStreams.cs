@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-
-namespace PolySharpFeatures
+﻿namespace PolySharpFeatures
 {
-    internal class AsyncStreams
+   internal class AsyncStreams
     {
         internal async IAsyncEnumerable<int> GenerateSequence()
         {
