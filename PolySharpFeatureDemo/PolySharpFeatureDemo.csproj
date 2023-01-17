@@ -37,8 +37,18 @@
     <StartupObject>PolySharpFeatures.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,9 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncStreams.cs" />
     <Compile Include="DefaultInterfaceMembers.cs" />
     <Compile Include="GlobalUsings.cs" />
+    <Compile Include="IndicesAndRanges.cs" />
     <Compile Include="NullableReferenceTypes.cs" />
+    <Compile Include="NullCoalescingAssignment.cs" />
     <Compile Include="PatternMatchingEnhancements.cs" />
     <Compile Include="PolyFills.cs" />
     <Compile Include="Program.cs" />
@@ -58,10 +71,10 @@
     <Compile Include="GlobalUsingsDemo.cs" />
     <Compile Include="DisposableRefStruct.cs" />
     <Compile Include="StaticLocalFunctions.cs" />
+    <Compile Include="UnmanagedConstructedTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\PolySharp.1.10.0\analyzers\dotnet\cs\PolySharp.SourceGenerators.dll" />
