@@ -72,6 +72,8 @@
     <Compile Include="CSharp9\InitOnlySettersTests.cs" />
     <Compile Include="CSharp9\PatternMatchingTests.cs" />
     <Compile Include="CSharp9\StaticAnonymousFunctionTests.cs" />
+    <Compile Include="CSharp9\TargetTypeConditionalExpressionTests.cs" />
+    <Compile Include="CSharp9\CovariantReturnTypesTests.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="CSharp8\IndexTests.cs" />

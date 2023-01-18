@@ -52,10 +52,10 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
   * Function pointers
   * Suppress emitting localsinit flag
 * Fit and finish features
-  * Target-typed new expressions
-  * static anonymous functions
-  * Target-typed conditional expressions
-  * Covariant return types
+  * [Target-typed new expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
+  * [static anonymous functions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions)
+  * [Target-typed conditional expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-conditional-expression)
+  * [Covariant return types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/covariant-returns)
   * Extension GetEnumerator support for foreach loops
   * Lambda discard parameters
   * Attributes on local functions
