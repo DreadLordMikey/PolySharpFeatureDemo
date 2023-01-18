@@ -64,12 +64,14 @@
     <Compile Include="CSharp8\AsyncStreamTests.cs" />
     <Compile Include="CSharp8\DisposableRefStructTests.cs" />
     <Compile Include="CSharp8\GlobalUsings.cs" />
+    <Compile Include="CSharp9\TargetTypeNewExpressionTests.cs" />
     <Compile Include="CSharp9\InitOnlyPropertyPerson.cs" />
     <Compile Include="CSharp9\PositionalPerson.cs" />
     <Compile Include="CSharp9\PropertyPerson.cs" />
     <Compile Include="CSharp9\RecordTypeTests.cs" />
     <Compile Include="CSharp9\InitOnlySettersTests.cs" />
     <Compile Include="CSharp9\PatternMatchingTests.cs" />
+    <Compile Include="CSharp9\StaticAnonymousFunctionTests.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="CSharp8\IndexTests.cs" />
