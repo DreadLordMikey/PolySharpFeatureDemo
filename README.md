@@ -3,7 +3,7 @@
 
 This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by [PolySharp](https://www.nuget.org/packages/PolySharp) when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
 
-This document lists all C# features that were added from C# 8 forward, and notes were features are either not supported or require additional setup or configuration. 
+This document lists all C# features that were added from C# 8 forward, and notes where features are either not supported or require additional setup or configuration. 
 
 ## Polyfills by C# Version
 
