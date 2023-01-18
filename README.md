@@ -5,7 +5,14 @@ This project contains unit tests that verify the availability of C# features tha
 
 This document lists all C# features that were added from C# 8 forward, and notes where features are either not supported or require additional setup or configuration. 
 
+## Adding PolySharp to a Project
+
+1. Add a reference to PolySharp from NuGet Package Manager.
+1. Manually add the analyzer to the project. In Solution Explorer, expand References, and right-click Analyzers. Select Add Analyzer. Browse to `packages\PolySharp.1.10.0\analyzers\dotnet\cs\` and select `PolySharp.SourceGenerators.dll`. Then clean and rebuild your solution.
+
 ## Polyfills by C# Version
+
+In each section below, if a bullet point is a hyperlink, the feature has been tested via unit test. Unless otherwise specified, the presence of a hyperlink indicates that the tests pass, and the feature is available via polyfill and works as documented in the linked Microsoft online documentation.
 
 ### C# 8
 
@@ -92,13 +99,3 @@ This document lists all C# features that were added from C# 8 forward, and notes
 * Improved method group conversion to delegate
 * Warning wave 7
 
-## Verified C# Polyfills
-
-* Global usings
-* Pattern matching enhancements
-* ReadOnly types and methods
-
-## Adding PolySharp to a Project
-
-1. Add a reference to PolySharp from NuGet Package Manager.
-1. Manually add the analyzer to the project. In Solution Explorer, expand References, and right-click Analyzers. Select Add Analyzer. Browse to `packages\PolySharp.1.10.0\analyzers\dotnet\cs\` and select `PolySharp.SourceGenerators.dll`. Then clean and rebuild your solution.
