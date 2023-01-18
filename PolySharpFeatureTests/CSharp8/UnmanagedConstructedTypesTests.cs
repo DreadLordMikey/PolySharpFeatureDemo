@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using System;
-
-namespace PolySharpFeatureTests
+﻿namespace PolySharpFeatureTests.CSharp8
 {
    [TestClass]
    public class UnmanagedConstructedTypesTests

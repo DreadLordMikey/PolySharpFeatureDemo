@@ -1,4 +1,4 @@
-﻿namespace PolySharpFeatureTests
+﻿namespace PolySharpFeatureTests.CSharp8
 {
     [TestClass]
     public class StackAllocTests

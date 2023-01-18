@@ -61,21 +61,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsyncStreamTests.cs" />
-    <Compile Include="DisposableRefStructTests.cs" />
-    <Compile Include="GlobalUsings.cs" />
+    <Compile Include="CSharp8\AsyncStreamTests.cs" />
+    <Compile Include="CSharp8\DisposableRefStructTests.cs" />
+    <Compile Include="CSharp8\GlobalUsings.cs" />
+    <Compile Include="CSharp9\InitOnlyPropertyPerson.cs" />
+    <Compile Include="CSharp9\PositionalPerson.cs" />
+    <Compile Include="CSharp9\PropertyPerson.cs" />
+    <Compile Include="CSharp9\RecordTypeTests.cs" />
+    <Compile Include="CSharp9\InitOnlySettersTests.cs" />
+    <Compile Include="CSharp9\PatternMatchingTests.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
     <Compile Include="Helpers\Point.cs" />
-    <Compile Include="IndexTests.cs" />
-    <Compile Include="NullableReferenceTypesTests.cs" />
+    <Compile Include="CSharp8\IndexTests.cs" />
+    <Compile Include="CSharp8\NullableReferenceTypesTests.cs" />
+    <Compile Include="CSharp9\WeatherObservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RangeTests.cs" />
-    <Compile Include="NullCoalescingOperatorTests.cs" />
-    <Compile Include="PatternMatchingTests.cs" />
-    <Compile Include="StaticLocalFunctionTests.cs" />
-    <Compile Include="StackAllocTests.cs" />
-    <Compile Include="InterpolatedVerbatimStringsTests.cs" />
-    <Compile Include="UnmanagedConstructedTypesTests.cs" />
+    <Compile Include="CSharp8\RangeTests.cs" />
+    <Compile Include="CSharp8\NullCoalescingOperatorTests.cs" />
+    <Compile Include="CSharp8\PatternMatchingTests.cs" />
+    <Compile Include="CSharp8\StaticLocalFunctionTests.cs" />
+    <Compile Include="CSharp8\StackAllocTests.cs" />
+    <Compile Include="CSharp8\InterpolatedVerbatimStringsTests.cs" />
+    <Compile Include="CSharp8\UnmanagedConstructedTypesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">

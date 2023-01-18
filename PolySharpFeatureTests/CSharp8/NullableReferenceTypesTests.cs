@@ -1,6 +1,6 @@
 ﻿#nullable enable
 
-namespace PolySharpFeatureTests
+namespace PolySharpFeatureTests.CSharp8
 {
    [TestClass]
    public class NullableReferenceTypesTests

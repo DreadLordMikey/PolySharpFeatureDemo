@@ -1,6 +1,6 @@
 ﻿using PolySharpFeatureTests.Helpers;
 
-namespace PolySharpFeatureTests
+namespace PolySharpFeatureTests.CSharp8
 {
    [TestClass]
    public class DisposableRefStructTests

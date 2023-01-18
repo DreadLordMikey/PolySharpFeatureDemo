@@ -1,28 +1,10 @@
 ﻿using PolySharpFeatureTests.Helpers;
 
-namespace PolySharpFeatureTests
+namespace PolySharpFeatureTests.CSharp8
 {
     [TestClass]
     public class PatternMatchingTests
     {
-        [TestMethod]
-        public void TypePattern_InSwitchStatement_MatchesPattern()
-        {
-            // Arrange
-            var expected = true;
-            var actual = false;
-
-            // Act
-            switch ("Hello, World")
-            {
-                case string:
-                    actual = true;
-                    break;
-            }
-
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
 
         [TestMethod]
         public void ConstantPattern_InSwitchExpression_MatchesPattern()

@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("PolySharpFeatureTests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Unit tests for PolySharp polyfills.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("One Call")]
 [assembly: AssemblyProduct("PolySharpFeatureTests")]
-[assembly: AssemblyCopyright("Copyright © One Call 2023")]
+[assembly: AssemblyCopyright("Copyright © Mike Hofer 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
