@@ -64,6 +64,7 @@
     <Compile Include="DisposableRefStructTests.cs" />
     <Compile Include="GlobalUsings.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
+    <Compile Include="Helpers\Point.cs" />
     <Compile Include="IndexTests.cs" />
     <Compile Include="NullableReferenceTypesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,7 +79,7 @@
       <Version>2.2.7</Version>
     </PackageReference>
     <PackageReference Include="MSTest.TestFramework">
-      <Version>2.2.7</Version>
+      <Version>3.0.2</Version>
     </PackageReference>
     <PackageReference Include="PolySharp">
       <Version>1.10.0</Version>
