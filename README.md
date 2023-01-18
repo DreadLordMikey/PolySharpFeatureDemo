@@ -42,10 +42,11 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 
 ### C# 9
 
-* Record types
-* Init only setters
-* Top-level statements
-* Pattern matching enhancements
+* [Record types](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types)
+* [Init only setters](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#init-only-setters)
+* [Top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#top-level-statements)
+    * Not verifiable via unit test. However, the `TopLevelStatementsTest` project is a console application that verifies that this feature works as documented. 
+* [Pattern matching enhancements](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)
 * Performance and interop
   * Native sized integers
   * Function pointers

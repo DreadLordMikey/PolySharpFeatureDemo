@@ -4,7 +4,7 @@
    public class StaticLocalFunctionTests
    {
       [TestMethod]
-      public void TestMethod1()
+      public void StaticLocalFunction_WhenCalled_ReturnsExpectedValue()
       {
          // Arrange
          var path = "C:\\Program Files";
