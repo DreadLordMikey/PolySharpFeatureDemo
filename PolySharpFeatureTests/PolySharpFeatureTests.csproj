@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -72,6 +73,8 @@
     <Compile Include="NullCoalescingOperatorTests.cs" />
     <Compile Include="PatternMatchingTests.cs" />
     <Compile Include="StaticLocalFunctionTests.cs" />
+    <Compile Include="StackAllocTests.cs" />
+    <Compile Include="InterpolatedVerbatimStringsTests.cs" />
     <Compile Include="UnmanagedConstructedTypesTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +89,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,7 +15,7 @@ namespace PolySharpFeatureTests
             // Act
             switch ("Hello, World")
             {
-                case string message:
+                case string:
                     actual = true;
                     break;
             }
@@ -70,7 +70,8 @@ namespace PolySharpFeatureTests
             Assert.AreEqual(p2.X - p2.Y, p2Actual.X);
             Assert.AreEqual(p2.Y, p2Actual.Y);
 
-            Assert.AreEqual(2 * p3.X, 2 * p3.Y);
+            Assert.AreEqual(2 * p3.X, p3Actual.X);
+            Assert.AreEqual(2 * p3.Y, p3Actual.Y);
         }
 
         [TestMethod]
@@ -227,7 +228,7 @@ namespace PolySharpFeatureTests
             // Assert
             Assert.AreEqual(expected1, actual1);
             Assert.AreEqual(expected2, actual2);
-            Assert.AreEqual(expected3, actual3);    
+            Assert.AreEqual(expected3, actual3);
             Assert.AreEqual(expected4, actual4);
 
         }

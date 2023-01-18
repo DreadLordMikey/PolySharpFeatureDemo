@@ -5,7 +5,7 @@
       public int X;
       public int Y;
       private bool isDisposed = false;
-      private Action onDispose = null;
+      private readonly Action onDispose = null;
 
       public DisposableRefStruct(int x, int y, Action onDispose)
       {
@@ -25,7 +25,7 @@
             return;
 
          // Dispose implementation goes here.
-         if (onDispose != null) onDispose();
+         onDispose?.Invoke();
 
          isDisposed = true;
       }

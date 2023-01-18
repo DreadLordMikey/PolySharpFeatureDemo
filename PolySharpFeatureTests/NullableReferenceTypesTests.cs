@@ -23,7 +23,9 @@ namespace PolySharpFeatureTests
       public void NullForgivingOperator_Succeeds()
       {
          // Arrange
+         #pragma warning disable IDE0059 // Unnecessary assignment of a value
          string notNull = "Hello";
+         #pragma warning restore IDE0059 // Unnecessary assignment of a value
          string? nullable = default;
 
          // Act
