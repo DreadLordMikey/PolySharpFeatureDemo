@@ -1,28 +1,33 @@
 ﻿
 ## Contents of this Project
 
-This project contains types that demonstrate C# features that were added in C# 8.0, 9.0, 10.0 and 11.0. Wherever possible, the types provide samples from Microsoft's own documentation.
+This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by [PolySharp](https://www.nuget.org/packages/PolySharp) when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
 
-When added as a NuGet reference to a project that targets .NET 4.5 through .NET 4.8x and specifies a Language Version of C# 8 or higher, [PolySharp](https://www.nuget.org/packages/PolySharp) creates polyfills for those C# features that are not supported by the current C# compiler. Certain features require runtime support, and cannot be supported.
+This document lists all C# features that were added from C# 8 forward, and notes were features are either not supported or require additional setup or configuration. 
 
 ## Polyfills by C# Version
 
 ### C# 8
 
 * [Readonly members](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members)
-* [Default interface methods](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface#default-interface-members) (not supported; requires runtime support)
+* [Default interface methods](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface#default-interface-members) 
+    - Not supported; requires support only available in later runtime versions.
 * [Pattern matching enhancements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns):
-  * Switch expressions
-  * Property patterns
-  * Tuple patterns
-  * Positional patterns
+  * [Is expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/is)
+  * [Switch statement](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement)
+  * [Switch expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression)
+  * [Property patterns](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#property-pattern)
+  * [Tuple patterns](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#positional-pattern)
+  * [Positional patterns](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#positional-pattern)
 * [Using declarations](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive)
 * [Static local functions](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
 * [Nullable reference types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types)
 * [Asynchronous streams](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#await-foreach)
 * [Indices and ranges](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#range-operator-):
-    * Index from End operator
-    * Range operator (not supported: requires .NET Core runtime support)
+    * [Index from End operator](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#index-from-end-operator-)
+    * [Range operator](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#range-operator-) 
+        - Not supported on arrays unless converted to a [Span\<T\>](https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-7.0) or [ReadOnlySpan\<T\>](https://learn.microsoft.com/en-us/dotnet/api/system.readonlyspan-1?view=net-7.0).
+        - Requires a reference to System.Memory.dll.
 * [Null-coalescing assignment](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/assignment-operator#null-coalescing-assignment)
 * [Unmanaged constructed types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/where-generic-type-constraint)
 * [Stackalloc in nested expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc)
