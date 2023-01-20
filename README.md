@@ -1,14 +1,20 @@
-﻿
+﻿# PolySharp Feature Tests
+
+
 ## Contents of this Project
 
-This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by [PolySharp](https://www.nuget.org/packages/PolySharp) when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
+This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by PolySharp when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
 
 This document lists all C# features that were added from C# 8 forward, and notes where features are either not supported or require additional setup or configuration. 
+
+PolySharp is sponsored by Sergio Pedri, and be found on github [here](https://github.com/Sergio0694/PolySharp). The NuGet package is available at NuGet.org [here](https://www.nuget.org/packages/PolySharp).
 
 ## Adding PolySharp to a Project
 
 1. Add a reference to PolySharp from NuGet Package Manager.
 1. Manually add the analyzer to the project. In Solution Explorer, expand References, and right-click Analyzers. Select Add Analyzer. Browse to `packages\PolySharp.1.10.0\analyzers\dotnet\cs\` and select `PolySharp.SourceGenerators.dll`. Then clean and rebuild your solution.
+
+If your project uses a `packages.config` file, consider migrating it to use the newer [PackageReference](https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) element in the `.csproj` file. Source code generation is more reliable when `PackageReference` elements are used as opposed to a `packages.config` file.
 
 ## Polyfills by C# Version
 
