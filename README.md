@@ -74,11 +74,12 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 
 * [Record structs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-structs)
 * Improvements of structure types
-    * Parameterless constructors and field initializers
-    * With expression
+    * [Parameterless constructors and field initializers](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/parameterless-struct-constructors)
+    * [With expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/record-structs#allow-with-expression-on-structs)
 * Interpolated string handlers
-* global using directives
-* File-scoped namespace declaration
+* [Global using directives](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#global-using-directives)
+* [File-scoped namespace declaration](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#file-scoped-namespace-declaration)
+    * Not testable via unit test. However, all types in the CSharp10 folder use file-scoped namespace declarations, verifying that this functionality compiles and works as intended.
 * Extended property patterns
 * Improvements on lambda expressions
 * Allow const interpolated strings
