@@ -68,6 +68,8 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 
 * [Record structs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-structs)
 * Improvements of structure types
+    * Parameterless constructors and field initializers
+    * With expression
 * Interpolated string handlers
 * global using directives
 * File-scoped namespace declaration

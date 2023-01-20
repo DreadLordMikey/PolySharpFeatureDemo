@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSharp10\RecordStructTests.cs" />
+    <Compile Include="CSharp10\StructImprovementTests.cs" />
     <Compile Include="CSharp8\AsyncStreamTests.cs" />
     <Compile Include="CSharp8\DisposableRefStructTests.cs" />
-    <Compile Include="CSharp8\GlobalUsings.cs" />
+    <Compile Include="CSharp10\GlobalUsings.cs" />
+    <Compile Include="CSharp8\UsingStatementTests.cs" />
     <Compile Include="CSharp9\ModuleInitializer.cs" />
     <Compile Include="CSharp9\TargetTypeNewExpressionTests.cs" />
     <Compile Include="CSharp9\InitOnlyPropertyPerson.cs" />
