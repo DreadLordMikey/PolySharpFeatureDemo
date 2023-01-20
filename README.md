@@ -66,7 +66,7 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 
 ### C# 10
 
-* Record structs
+* [Record structs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-structs)
 * Improvements of structure types
 * Interpolated string handlers
 * global using directives

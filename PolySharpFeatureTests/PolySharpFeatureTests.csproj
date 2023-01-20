@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharp10\RecordStructTests.cs" />
     <Compile Include="CSharp8\AsyncStreamTests.cs" />
     <Compile Include="CSharp8\DisposableRefStructTests.cs" />
     <Compile Include="CSharp8\GlobalUsings.cs" />
