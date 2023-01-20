@@ -74,6 +74,8 @@
     <Compile Include="CSharp9\StaticAnonymousFunctionTests.cs" />
     <Compile Include="CSharp9\TargetTypeConditionalExpressionTests.cs" />
     <Compile Include="CSharp9\CovariantReturnTypesTests.cs" />
+    <Compile Include="CSharp9\GetEnumeratorExtensionTests.cs" />
+    <Compile Include="CSharp9\LambdaDiscardParameterTests.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="CSharp8\IndexTests.cs" />

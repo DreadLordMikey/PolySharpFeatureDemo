@@ -56,8 +56,8 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
   * [static anonymous functions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions)
   * [Target-typed conditional expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-conditional-expression)
   * [Covariant return types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/covariant-returns)
-  * Extension GetEnumerator support for foreach loops
-  * Lambda discard parameters
+  * [Extension GetEnumerator support for foreach loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/extension-getenumerator)
+  * [Lambda discard parameters](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/lambda-discard-parameters)
   * Attributes on local functions
 * Support for code generators
   * Module initializers
