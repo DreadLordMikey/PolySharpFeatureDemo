@@ -61,8 +61,8 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
   * [Attributes on local functions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/local-function-attributes)
 * Support for code generators
   * [Module initializers](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/module-initializers)
-  * New features for partial methods
-* Warning wave 5
+  * [New features for partial methods](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/extending-partial-methods)
+* [Warning wave 5](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/warning-waves#cs7023---a-static-type-is-used-in-an-is-or-as-expression)
 
 ### C# 10
 
