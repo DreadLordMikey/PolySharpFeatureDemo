@@ -64,6 +64,7 @@
     <Compile Include="CSharp8\AsyncStreamTests.cs" />
     <Compile Include="CSharp8\DisposableRefStructTests.cs" />
     <Compile Include="CSharp8\GlobalUsings.cs" />
+    <Compile Include="CSharp9\ModuleInitializer.cs" />
     <Compile Include="CSharp9\TargetTypeNewExpressionTests.cs" />
     <Compile Include="CSharp9\InitOnlyPropertyPerson.cs" />
     <Compile Include="CSharp9\PositionalPerson.cs" />
@@ -76,7 +77,9 @@
     <Compile Include="CSharp9\CovariantReturnTypesTests.cs" />
     <Compile Include="CSharp9\GetEnumeratorExtensionTests.cs" />
     <Compile Include="CSharp9\LambdaDiscardParameterTests.cs" />
+    <Compile Include="CSharp9\LocalFunctionAttributeTests.cs" />
     <Compile Include="Helpers\DisposableRefStruct.cs" />
+    <Compile Include="Helpers\MethodInfoExtensions.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="CSharp8\IndexTests.cs" />
     <Compile Include="CSharp8\NullableReferenceTypesTests.cs" />
