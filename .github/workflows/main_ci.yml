@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe PolySharpFeatureDemo.sln /p:platform="Any CPU" /p:configuration="Release" /unsafe
+          msbuild.exe PolySharpFeatureDemo.sln /p:platform="Any CPU" /p:configuration="Release" /p:AllowUnsafeBlocks=true
         
       - name: Run Tests
         run: vstest.console.exe .\tests\PolySharpFeatureTests\bin\Release\PolySharpFeatureTests.dll
