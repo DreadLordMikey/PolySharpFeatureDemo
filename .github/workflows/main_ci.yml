@@ -20,7 +20,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Setup VSTest
-        uses: PolySharpFeatureDemo/Setup-VSTest@v1
+        uses: darenm/Setup-VSTest@v1
 
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
