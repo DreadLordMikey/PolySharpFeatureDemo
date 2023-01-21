@@ -81,7 +81,7 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
     * Not testable via unit test. However, all types in the CSharp10 folder use file-scoped namespace declarations, verifying that this functionality compiles and works as intended.
 * [Extended property patterns](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#extended-property-patterns)
 * Improvements on lambda expressions
-* Allow const interpolated strings
+* [Allow const interpolated strings](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-types-can-seal-tostring)
 * [Record types can seal ToString()](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-types-can-seal-tostring)
 * Improved definite assignment
 * Allow both assignment and declaration in the same deconstruction
