@@ -34,4 +34,4 @@ jobs:
         
       - name: Run Tests
         run: |
-          vstest.console.exe CSharp8.Tests\bin\Release\CSharp8.Tests.dll CSharp9.Tests\bin\Release\CSharp9.Tests.dll CSharp8.Tests\bin\Release\CSharp10.Tests.dll /parallel
+          vstest.console.exe CSharp8.Tests\bin\Release\CSharp8.Tests.dll CSharp9.Tests\bin\Release\CSharp9.Tests.dll CSharp10.Tests\bin\Release\CSharp10.Tests.dll /parallel
