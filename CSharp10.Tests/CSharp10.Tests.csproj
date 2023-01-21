@@ -65,6 +65,7 @@
     <Compile Include="CSharp10\LambdaImprovementTests.cs" />
     <Compile Include="CSharp10\GlobalUsings.cs" />
     <Compile Include="CSharp10\SealedRecordOverrideTests.cs" />
+    <Compile Include="CSharp10\ImprovedIndefiniteAssignmentTests.cs" />
     <Compile Include="Helpers\MethodInfoExtensions.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
