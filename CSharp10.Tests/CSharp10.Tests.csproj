@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharp10\ConstantInterpolatedStringTests.cs" />
     <Compile Include="CSharp10\RecordStructTests.cs" />
     <Compile Include="CSharp10\StructImprovementTests.cs" />
     <Compile Include="CSharp10\ExtendedPropertyPatternTests.cs" />
