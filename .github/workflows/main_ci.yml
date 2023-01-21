@@ -33,4 +33,4 @@ jobs:
           msbuild.exe PolySharpFeatureDemo.sln /p:platform="Any CPU" /p:configuration="Release" /p:AllowUnsafeBlocks=true
         
       - name: Run Tests
-        run: vstest.console.exe .\tests\PolySharpFeatureTests\bin\Release\PolySharpFeatureTests.dll
+        run: vstest.console.exe PolySharpFeatureTests\bin\Release\PolySharpFeatureTests.dll
