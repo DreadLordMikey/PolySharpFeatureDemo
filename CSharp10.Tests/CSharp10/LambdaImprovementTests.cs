@@ -79,15 +79,14 @@ namespace PolySharpFeatureTests.CSharp10
         public void Lambda_WithReturnType_ReturnsExpectedValue()
         {
             // Arrange
-            var expected = (byte)'A';
-            var value = object (byte value) => value <= 4 ? 1 : 'A';
+            var choose = object (bool b) => b ? 1 : "two";
 
             // Act
-            var actual = (byte)value(5);
+            var actual = choose(false);
 
             // Assert
-            Assert.IsInstanceOfType<byte>(actual);
-            Assert.AreEqual(expected, actual);
+            //Assert.IsInstanceOfType<string>(actual);
+            Assert.AreEqual("two", actual);
         }
     }
 }
