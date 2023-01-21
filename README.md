@@ -82,7 +82,7 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 * [Extended property patterns](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#extended-property-patterns)
 * Improvements on lambda expressions
 * Allow const interpolated strings
-* Record types can seal ToString()
+* [Record types can seal ToString()](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-types-can-seal-tostring)
 * Improved definite assignment
 * Allow both assignment and declaration in the same deconstruction
 * Allow AsyncMethodBuilder attribute on methods
