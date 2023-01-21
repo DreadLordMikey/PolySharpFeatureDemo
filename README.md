@@ -1,6 +1,5 @@
 ﻿# PolySharp Feature Tests
 
-
 ## Contents of this Project
 
 This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by PolySharp when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
@@ -80,7 +79,7 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 * [Global using directives](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#global-using-directives)
 * [File-scoped namespace declaration](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#file-scoped-namespace-declaration)
     * Not testable via unit test. However, all types in the CSharp10 folder use file-scoped namespace declarations, verifying that this functionality compiles and works as intended.
-* Extended property patterns
+* [Extended property patterns](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#extended-property-patterns)
 * Improvements on lambda expressions
 * Allow const interpolated strings
 * Record types can seal ToString()
