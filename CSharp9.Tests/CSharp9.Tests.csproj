@@ -4,13 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DE58F45-09C3-4A58-ACEA-F6DCC702CE6B}</ProjectGuid>
+    <ProjectGuid>{F0AD528F-45C2-43A2-BBE1-30E9D7A727DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PolySharpFeatureTests</RootNamespace>
-    <AssemblyName>PolySharpFeatureTests</AssemblyName>
+    <AssemblyName>CSharp9.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <LangVersion>11.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
@@ -58,19 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSharp10\RecordStructTests.cs" />
-    <Compile Include="CSharp10\StructImprovementTests.cs" />
-    <Compile Include="CSharp10\ExtendedPropertyPatternTests.cs" />
-    <Compile Include="CSharp10\LambdaImprovementTests.cs" />
-    <Compile Include="CSharp8\AsyncStreamTests.cs" />
-    <Compile Include="CSharp8\DisposableRefStructTests.cs" />
-    <Compile Include="CSharp10\GlobalUsings.cs" />
-    <Compile Include="CSharp8\UsingStatementTests.cs" />
-    <Compile Include="CSharp9\ModuleInitializer.cs" />
+    <Compile Include="Helpers\ModuleInitializer.cs" />
     <Compile Include="CSharp9\TargetTypeNewExpressionTests.cs" />
-    <Compile Include="CSharp9\InitOnlyPropertyPerson.cs" />
-    <Compile Include="CSharp9\PositionalPerson.cs" />
-    <Compile Include="CSharp9\PropertyPerson.cs" />
+    <Compile Include="Helpers\InitOnlyPropertyPerson.cs" />
+    <Compile Include="Helpers\PositionalPerson.cs" />
+    <Compile Include="Helpers\PropertyPerson.cs" />
     <Compile Include="CSharp9\RecordTypeTests.cs" />
     <Compile Include="CSharp9\InitOnlySettersTests.cs" />
     <Compile Include="CSharp9\PatternMatchingTests.cs" />
@@ -81,20 +73,10 @@
     <Compile Include="CSharp9\LambdaDiscardParameterTests.cs" />
     <Compile Include="CSharp9\LocalFunctionAttributeTests.cs" />
     <Compile Include="CSharp9\PartialMethodTests.cs" />
-    <Compile Include="Helpers\DisposableRefStruct.cs" />
+    <Compile Include="Helpers\WeatherObservation.cs" />
     <Compile Include="Helpers\MethodInfoExtensions.cs" />
     <Compile Include="Helpers\Point.cs" />
-    <Compile Include="CSharp8\IndexTests.cs" />
-    <Compile Include="CSharp8\NullableReferenceTypesTests.cs" />
-    <Compile Include="CSharp9\WeatherObservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CSharp8\RangeTests.cs" />
-    <Compile Include="CSharp8\NullCoalescingOperatorTests.cs" />
-    <Compile Include="CSharp8\PatternMatchingTests.cs" />
-    <Compile Include="CSharp8\StaticLocalFunctionTests.cs" />
-    <Compile Include="CSharp8\StackAllocTests.cs" />
-    <Compile Include="CSharp8\InterpolatedVerbatimStringsTests.cs" />
-    <Compile Include="CSharp8\UnmanagedConstructedTypesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
@@ -108,9 +90,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".editorconfig" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,10 +1,5 @@
 
 /.vs
 /packages
-/PolySharpFeatureDemo/obj
-/PolySharpFeatureDemo/bin
-/PolySharpFeatureTests/bin
-/PolySharpFeatureTests/obj
-/TopLevelStatementsTest/obj
-/TopLevelStatementsTest/bin/Debug
-/TopLevelStatementsTest/bin/Release
+obj/
+bin/
