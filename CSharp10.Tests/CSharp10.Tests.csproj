@@ -66,6 +66,10 @@
     <Compile Include="CSharp10\GlobalUsings.cs" />
     <Compile Include="CSharp10\SealedRecordOverrideTests.cs" />
     <Compile Include="CSharp10\ImprovedIndefiniteAssignmentTests.cs" />
+    <Compile Include="CSharp10\InterpolatedStringHandlerTests.cs" />
+    <Compile Include="Helpers\Logger.cs" />
+    <Compile Include="Helpers\LogInterpolatedStringHandler.cs" />
+    <Compile Include="Helpers\LogLevel.cs" />
     <Compile Include="Helpers\MethodInfoExtensions.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

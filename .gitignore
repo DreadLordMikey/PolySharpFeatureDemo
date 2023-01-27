@@ -3,3 +3,4 @@
 /packages
 obj/
 bin/
+/CSharp10.Tests/CSharp10.Tests.csproj.user
