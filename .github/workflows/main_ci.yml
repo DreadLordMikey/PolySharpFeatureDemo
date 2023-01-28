@@ -31,7 +31,38 @@ jobs:
       - name: Build Solution
         run: |
           msbuild.exe PolySharpFeatureTests.sln /p:platform="Any CPU" /p:configuration="Release" /p:AllowUnsafeBlocks=true
-        
-      - name: Run Tests
+
+      - name: Run C# 8 Tests
         run: |
-          vstest.console.exe CSharp8.Tests\bin\Release\CSharp8.Tests.dll CSharp9.Tests\bin\Release\CSharp9.Tests.dll CSharp10.Tests\bin\Release\CSharp10.Tests.dll /parallel
+          vstest.console.exe CSharp8.Tests\bin\Release\CSharp8.Tests.dll /parallel
+
+      - name: Run C# 9 Tests
+        run: |
+          vstest.console.exe CSharp9.Tests\bin\Release\CSharp9.Tests.dll /parallel
+
+      - name: Run C# 10 4.5.1 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net451\CSharp10.Tests.dll 
+
+      - name: Run C# 10 4.5.2 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net452\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.6 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net46\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.6.1 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net461\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.6.2 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net462\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.7 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net47\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.7.1 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net471\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.7.2 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net472\CSharp10.Tests.dll
+
+      - name: Run C# 10 4.8 Tests
+        run: vstest.console.exe CSharp10.Tests\bin\Release\net48\CSharp10.Tests.dll

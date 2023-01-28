@@ -2,7 +2,11 @@
 
 ## Contents of this Project
 
-This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by PolySharp when targeting .NET 4.8x or lower. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
+This project contains unit tests that verify the availability of C# features that were added in C# 8.0 or higher using polyfills provided by PolySharp when targeting .NET Framework 4.5.1 through 4.8. Wherever possible, the tests use samples from Microsoft's own online documentation for the individual features.
+
+> **NOTE:** Tests for .NET Framework 4.5 are not provided as the .NET Framework 4.5 SDK is well past its end of life and Microsoft no longer makes it available for download from [.NET SDK Downloads for Visual Studio](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks). 
+>
+>As the SDK can no longer be acquired, forks of this repository would not be able to run these tests if they did not already have the SDK installed.
 
 This document lists all C# features that were added from C# 8 forward, and notes where features are either not supported or require additional setup or configuration. 
 
