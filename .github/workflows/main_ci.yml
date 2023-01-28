@@ -42,12 +42,12 @@ jobs:
 
       - name: Run C# 10 Tests
         run: |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net451\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net452\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net46\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net461\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net462\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net47\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net471\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net472\CSharp10.Tests.exe |
-          vstest.console.exe CSharp10.Tests\bin\Debug\net48\CSharp10.Tests.exe /parallel
+          vstest.console.exe CSharp10.Tests\bin\Release\net451\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net452\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net46\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net461\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net462\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net47\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net471\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net472\CSharp10.Tests.exe |
+          vstest.console.exe CSharp10.Tests\bin\Release\net48\CSharp10.Tests.exe /parallel
