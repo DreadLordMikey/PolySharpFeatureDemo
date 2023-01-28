@@ -85,7 +85,7 @@ namespace PolySharpFeatureTests.CSharp10
             var actual = choose(false);
 
             // Assert
-            Assert.IsInstanceOfType<string>(actual);
+            Assert.IsInstanceOfType(actual, typeof(string));
             Assert.AreEqual("two", actual);
         }
     }
