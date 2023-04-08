@@ -41,9 +41,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Helpers\MethodInfoExtensions.cs" />
-    <Compile Remove="Helpers\Point.cs" />
-  </ItemGroup>
-
 </Project>
