@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using CSharp9.Tests.Helpers;
 
 namespace PolySharpFeatureTests.CSharp9
 {

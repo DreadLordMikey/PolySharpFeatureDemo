@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net451;net452;net46;net461;net462;net47;net471;net472;net48</TargetFrameworks>
     <LangVersion>11.0</LangVersion>
-    <ImplicitUsings>disaable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <IsPackable>false</IsPackable>
@@ -17,15 +17,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Helpers\MethodInfoExtensions.cs" />
-    <Compile Remove="Helpers\Point.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,10 +31,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

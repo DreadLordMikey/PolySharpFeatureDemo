@@ -16,7 +16,7 @@ namespace PolySharpFeatureTests.CSharp9
             Pet pet = prefersCats ? new Cat() : new Dog();
 
             // Assert
-            Assert.IsInstanceOfType<Cat>(pet);
+            Assert.IsInstanceOfType(pet, typeof(Cat));
         }
         private class Pet { }
         private class Dog : Pet { }

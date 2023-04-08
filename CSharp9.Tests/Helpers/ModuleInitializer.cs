@@ -1,16 +1,13 @@
-﻿using System.Diagnostics;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
-namespace PolySharpFeatureTests.CSharp9
+namespace CSharp9.Tests.Helpers
 {
-    internal sealed class ModuleInitializerDemo
+    internal static class ModuleInitializerDemo
     {
         [ModuleInitializer]
         public static void InitializeModule()
         {
-            Debug.WriteLine("This code is invoked before any other code in the assembly.");
+            StartupStatus.IsInitialized = true;
         }
-
-        private ModuleInitializerDemo() { }
     }
 }

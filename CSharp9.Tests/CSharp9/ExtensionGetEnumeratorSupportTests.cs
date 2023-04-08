@@ -4,7 +4,7 @@ using System.Linq;
 namespace PolySharpFeatureTests.CSharp9
 {
     [TestClass]
-    public class GetEnumeratorExtensionTests
+    public class ExtensionGetEnumeratorSupportTests
     {
         [TestMethod]
         public void EnumeratorExtension()
@@ -27,16 +27,14 @@ namespace PolySharpFeatureTests.CSharp9
 
     public class Iterable
     {
-        private int _current;
-
-        public int Current { get => _current; }
+        public int Current { get; private set; }
 
         public bool MoveNext()
         {
-            if (_current == 4)
+            if (Current == 4)
                 return false;
 
-            _current++;
+            Current++;
             return true;
         }
     }

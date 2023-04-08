@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
-namespace PolySharpFeatureTests.Helpers
+namespace CSharp9.Tests.Helpers
 {
     public static class MethodInfoExtensions
     {

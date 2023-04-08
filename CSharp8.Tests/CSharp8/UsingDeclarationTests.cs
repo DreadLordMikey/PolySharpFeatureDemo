@@ -4,7 +4,7 @@ using System;
 namespace PolySharpFeatureTests.CSharp8
 {
     [TestClass]
-    public class UsingStatementTests
+    public class UsingDeclarationTests
     {
         [TestMethod]
         public void Disposable_WithBlockScope_IsDisposed()

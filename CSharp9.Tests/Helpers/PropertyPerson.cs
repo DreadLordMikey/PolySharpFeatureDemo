@@ -1,12 +1,9 @@
-﻿namespace PolySharpFeatureTests.CSharp9
+﻿namespace CSharp9.Tests.Helpers
 {
-    public partial class RecordTypeTests
+    record PropertyPerson
     {
-        record PropertyPerson
-        {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-        }
-
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
+
 }
