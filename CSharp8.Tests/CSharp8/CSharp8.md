@@ -18,8 +18,8 @@ Pattern matching enhancement: Property patterns  |✔️  |✔️   |✔️    |
 Pattern matching enhancement: Switch expressions |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 Pattern matching enhancement: Tuple patterns     |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 Readonly members                                 |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
-Stackalloc in nested expressions<sup>1</sup>     |❔  |❔   |❔    |❔  |❔  |❔    |❔   |❔  |❔  |❔
-Static local functions<sup>1</sup>               |❔  |❔   |❔    |❔  |❔  |❔    |❔   |❔  |❔  |❔
+Stackalloc in nested expressions<sup>1</sup>     |--  |--   |--    |--  |--  |--    |--   |--  |--  |--
+Static local functions<sup>1</sup>               |--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [Using declarations](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/using#pattern-based-using)                               |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
                                                                                                
 <div style="font-size: smaller;">   

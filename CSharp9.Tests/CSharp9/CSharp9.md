@@ -21,13 +21,15 @@ Native sized integers <sup>1</sup>                            |--  |--   |--    
 Suppress emitting localsinit flag <sup>1</sup>                |--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [Target-typed conditional expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-conditional-expression)             |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 [Target-typed new expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)                     |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
-[Top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#top-level-statements)                             |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
+[Top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#top-level-statements) <sup>3</sup>                             |✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
                                                                                                
 <div style="font-size: smaller;">   
 
 <sup>1</sup> Not verifiable via unit test.</sup>
 
 <sup>2</sup> Requires more research before adequate testing methods can be developed.
+
+<sup>3</sup> This cannot be verified via unit test. However, a separate project within this solution, `TopLevelStatementsTest.csproj`, has been provided to demonstrate this feature.
 
 </div>
 
