@@ -29,6 +29,7 @@ namespace PolySharpFeatureTests.CSharp8
             Assert.AreEqual(expected, actual);
         }
 
+#if (NET47 || NET471_OR_GREATER)
         [TestMethod]
         public void Pattern_WithGuard_MatchesPatternAndGuard()
         {
@@ -93,6 +94,7 @@ namespace PolySharpFeatureTests.CSharp8
             Assert.AreEqual(expected4, actual4);
 
         }
+#endif
 
     }
 }

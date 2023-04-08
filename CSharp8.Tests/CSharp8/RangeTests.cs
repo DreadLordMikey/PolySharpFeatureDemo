@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿#if NET47_OR_GREATER
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace PolySharpFeatureTests.CSharp8
@@ -107,3 +108,4 @@ namespace PolySharpFeatureTests.CSharp8
       
    }
 }
+#endif

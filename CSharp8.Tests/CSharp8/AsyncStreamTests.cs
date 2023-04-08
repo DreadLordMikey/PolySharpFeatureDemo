@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿#if NET462_OR_GREATER
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -46,3 +47,4 @@ namespace PolySharpFeatureTests.CSharp8
 
    }
 }
+#endif

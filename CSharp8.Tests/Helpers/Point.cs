@@ -1,4 +1,5 @@
-﻿namespace PolySharpFeatureTests.Helpers
+﻿#if (NET47 || NET471_OR_GREATER)
+namespace PolySharpFeatureTests.Helpers
 {
     public readonly struct Point
     {
@@ -18,3 +19,4 @@
         };
     }
 }
+#endif
