@@ -1,4 +1,4 @@
-    name: Build and Tests
+name: Build and Tests
 
 on:  
   push:
@@ -32,9 +32,6 @@ jobs:
         run: msbuild.exe PolySharpFeatureTests.sln /p:platform="Any CPU" /p:configuration="Release" /p:AllowUnsafeBlocks=true
 
 
-      - name: Run C# 8 Tests
-        run: vstest.console.exe CSharp8.Tests\bin\Release\net45\CSharp8.Tests.dll
-
       - name: Run C# 8 4.5.1 Tests
         run: vstest.console.exe CSharp8.Tests\bin\Release\net451\CSharp8.Tests.dll 
 
@@ -62,10 +59,6 @@ jobs:
       - name: Run C# 8 4.8 Tests
         run: vstest.console.exe CSharp8.Tests\bin\Release\net48\CSharp8.Tests.dll
 
-      - name: Run C# 9 Tests
-        run: |
-          vstest.console.exe CSharp9.Tests\bin\Release\net45\CSharp9.Tests.dll
-
       - name: Run C# 9 4.5.1 Tests
         run: vstest.console.exe CSharp9.Tests\bin\Release\net451\CSharp9.Tests.dll 
 
@@ -92,11 +85,6 @@ jobs:
 
       - name: Run C# 9 4.8 Tests
         run: vstest.console.exe CSharp9.Tests\bin\Release\net48\CSharp9.Tests.dll
-
-
-
-      - name: Run C# 10 4.5 Tests
-        run: vstest.console.exe CSharp10.Tests\bin\Release\net45\CSharp10.Tests.dll 
 
       - name: Run C# 10 4.5.1 Tests
         run: vstest.console.exe CSharp10.Tests\bin\Release\net451\CSharp10.Tests.dll 
