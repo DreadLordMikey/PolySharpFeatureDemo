@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PolySharpFeatureTests.Helpers;
+﻿using CSharp9.Tests.Helpers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -21,7 +21,7 @@ namespace PolySharpFeatureTests.CSharp9
             #pragma warning restore CS8321 
 
             var type = typeof(LocalFunctionAttributeTests);
-            var methodName = MethodBase.GetCurrentMethod().Name;
+            var methodName = MethodBase.GetCurrentMethod()?.Name ?? "";
             var localMethodName = "Foo";
             var methodInfo = type.GetLocalMethod(methodName, localMethodName);
 
@@ -30,7 +30,8 @@ namespace PolySharpFeatureTests.CSharp9
 
             // Assert
             Assert.IsNotNull(attribute);
-            Assert.IsInstanceOfType<ObsoleteAttribute>(attribute);
+            
+            Assert.IsInstanceOfType(attribute, typeof(ObsoleteAttribute));
         }
 
         [TestMethod]
@@ -40,10 +41,9 @@ namespace PolySharpFeatureTests.CSharp9
             [DllImport("kernel32", SetLastError = true)]
             static extern int GetCurrentDirectory(int bufSize, StringBuilder buf);
             var directoryBuffer = new StringBuilder(2048);
-            var bytesWritten = 0;
 
             // Act
-            bytesWritten = GetCurrentDirectory(2048, directoryBuffer);
+            var bytesWritten = GetCurrentDirectory(2048, directoryBuffer);
 
 
             // Assert

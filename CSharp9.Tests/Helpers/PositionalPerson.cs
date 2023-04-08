@@ -1,8 +1,5 @@
-﻿namespace PolySharpFeatureTests.CSharp9
+﻿namespace CSharp9.Tests.Helpers
 {
-    public partial class RecordTypeTests
-    {
-        record PositionalPerson(string FirstName, string LastName);
+    record PositionalPerson(string FirstName, string LastName);
 
-    }
 }

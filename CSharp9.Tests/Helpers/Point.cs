@@ -1,4 +1,4 @@
-﻿namespace PolySharpFeatureTests.Helpers
+﻿namespace CSharp9.Tests.Helpers
 {
     public readonly struct Point
     {

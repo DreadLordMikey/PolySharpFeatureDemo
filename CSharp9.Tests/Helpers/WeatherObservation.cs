@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PolySharpFeatureTests.CSharp9
+namespace CSharp9.Tests.Helpers
 {
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0250:Make struct 'readonly'", Justification = "readonly record structs not available until C# 10.")]
     struct WeatherObservation
