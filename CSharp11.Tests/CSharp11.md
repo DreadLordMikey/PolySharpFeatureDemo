@@ -16,7 +16,7 @@ Feature                                          |4.5 |4.5.1|4.5.2|4.6 |4.6.1|4.
 -------------------------------------------------|:--:|:---:|:---:|:--:|:---:|:---:|:--:|:--:|:--:|:--:
 [Auto default structs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#auto-default-struct)|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 [Extended nameof scope](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#extended-nameof-scope) <sup>1</sup>|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
-[File local types](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#file-local-types)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
+[File local types](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#file-local-types)|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 [Generic attributes](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-attributes)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [Generic math support](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-math-support)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [Improved method group conversion to delegate](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#improved-method-group-conversion-to-delegate)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
