@@ -1,4 +1,4 @@
-﻿namespace PolySharpFeatureTests.Helpers;
+﻿namespace CSharp10.Tests.Helpers;
 
 public class Logger
 {

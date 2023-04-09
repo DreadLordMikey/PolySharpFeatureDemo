@@ -2,6 +2,14 @@
 
 See [C# version 11.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-11) in [C# Version History](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history) at [Microsoft's C# documentation](https://learn.microsoft.com/en-us/dotnet/csharp/) site.
 
+## Compatibility Table Legend
+
+Icon|Description
+:-:|:-
+✔️|All tests passed for this version.
+❌|Tests failed for this version.
+--|Feature not tested for this version.
+
 ## Feaures and Compatibility
 
 Feature                                          |4.5 |4.5.1|4.5.2|4.6 |4.6.1|4.6.2|4.7|4.7.1|4.7.2|4.8

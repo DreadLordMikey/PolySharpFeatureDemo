@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Runtime.CompilerServices;
 
-namespace PolySharpFeatureTests.Helpers;
+namespace CSharp10.Tests.Helpers;
 
 [InterpolatedStringHandler]
 public ref struct LogInterpolatedStringHandler

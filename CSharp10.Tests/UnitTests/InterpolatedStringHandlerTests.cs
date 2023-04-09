@@ -1,4 +1,4 @@
-﻿using PolySharpFeatureTests.Helpers;
+﻿using CSharp10.Tests.Helpers;
 
 namespace CSharp10.Tests.UnitTests;
 
