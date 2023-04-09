@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace PolySharpFeatureTests.CSharp10;
+namespace CSharp10.Tests.UnitTests;
 
 [TestClass]
 public class SealedRecordOverrideTests

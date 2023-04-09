@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using System;
-
-namespace PolySharpFeatureTests.CSharp10;
+﻿namespace CSharp10.Tests.UnitTests;
 
 [TestClass]
 public class RecordStructTests
@@ -11,7 +7,9 @@ public class RecordStructTests
     public void RecordStruct_WhenMutable_CanBeMutated()
     {
         // Arrange
+#pragma warning disable IDE0017 // Simplify object initialization
         var instance = new MutablePoint();
+#pragma warning restore IDE0017 // Simplify object initialization
 
         // Act
         instance.X = 5;

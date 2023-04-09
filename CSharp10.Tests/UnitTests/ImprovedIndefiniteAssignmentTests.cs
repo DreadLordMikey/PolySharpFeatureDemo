@@ -1,4 +1,6 @@
-﻿namespace PolySharpFeatureTests.CSharp10;
+﻿using CSharp10.Tests.Helpers;
+
+namespace CSharp10.Tests.UnitTests;
 
 [TestClass]
 public class ImprovedIndefiniteAssignmentTests
@@ -9,7 +11,7 @@ public class ImprovedIndefiniteAssignmentTests
         // Arrange
         var expected = "Foo";
         var actual = default(string);
-        var c = new Foo();
+        var c = new ImprovedIndefiniteAssignmentImpl();
 
         // Act
         if (c != null && c.GetDependentValue(out object buffer))
@@ -27,7 +29,7 @@ public class ImprovedIndefiniteAssignmentTests
         // Arrange
         var expected = "Foo";
         var actual = default(string);
-        var c = new Foo();
+        var c = new ImprovedIndefiniteAssignmentImpl();
 
         // Act
         if (c?.GetDependentValue(out object buffer) == true)
@@ -45,7 +47,7 @@ public class ImprovedIndefiniteAssignmentTests
         // Arrange
         var expected = "Foo";
         var actual = default(string);
-        var c = new Foo();
+        var c = new ImprovedIndefiniteAssignmentImpl();
 
         // Act
         if (c?.GetDependentValue(out object buffer) ?? false)
@@ -57,12 +59,4 @@ public class ImprovedIndefiniteAssignmentTests
         Assert.AreEqual(expected, actual);
     }
 
-    private class Foo
-    {
-        public bool GetDependentValue(out object obj)
-        {
-            obj = "Foo";
-            return true;
-        }
-    }
 }
