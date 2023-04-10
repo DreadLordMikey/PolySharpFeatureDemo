@@ -19,16 +19,19 @@ PolySharp is sponsored by Sergio Pedri, and be found on github [here](https://gi
 
 If your project uses a `packages.config` file, consider migrating it to use the newer [PackageReference](https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) element in the `.csproj` file. Source code generation is more reliable when `PackageReference` elements are used as opposed to a `packages.config` file.
 
-## Polyfills by C# Version
-
-In each section below, if a bullet point is a hyperlink, the feature has been tested via unit test. Unless otherwise specified, the presence of a hyperlink indicates that the tests pass, and the feature is available via polyfill and works as documented in the linked Microsoft online documentation.
 
 ## Test Results by Version
+
+Each of the pages below provides a feature compatibility matrix that describes the availability of each feature in each version of the .NET Framework tested.
 
 - [C# 8](CSharp8.Tests/CSharp8.md)
 - [C# 9](CSharp9.Tests/CSharp9.md)
 - [C# 10](CSharp10.Tests/CSharp10.md)
 - [C# 11](CSharp11.Tests/CSharp11.md) _In progress_
+
+## Polyfills by C# Version
+
+In each section below, if a bullet point is a hyperlink, the feature has been tested via unit test. Unless otherwise specified, the presence of a hyperlink indicates that the tests pass, and the feature is available via polyfill and works as documented in the linked Microsoft online documentation.
 
 ### C# 8
 
