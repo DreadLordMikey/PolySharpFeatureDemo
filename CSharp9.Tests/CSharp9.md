@@ -41,9 +41,3 @@ Suppress emitting localsinit flag <sup>1</sup>                |--  |--   |--    
 <sup>3</sup> This cannot be verified via unit test. However, a separate project within this solution, `TopLevelStatementsTest.csproj`, has been provided to demonstrate this feature.
 
 </div>
-
-<div style="display: none">
-
-❔✔️❌
-
-</div>
