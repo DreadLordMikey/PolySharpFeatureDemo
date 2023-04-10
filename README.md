@@ -25,7 +25,10 @@ In each section below, if a bullet point is a hyperlink, the feature has been te
 
 ## Test Results by Version
 
-[C# 8](CSharp8.Tests/CSharp8.md)
+- [C# 8](CSharp8.Tests/CSharp8.md)
+- [C# 9](CSharp9.Tests/CSharp9.md)
+- [C# 10](CSharp10.Tests/CSharp10.md)
+- [C# 11](CSharp11.Tests/CSharp11.md) _In progress_
 
 ### C# 8
 
