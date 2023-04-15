@@ -1,25 +1,22 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using CSharp11.Tests.Helpers;
+﻿using CSharp11.Tests.Helpers;
 
-namespace CSharp11.Tests.UnitTests
+namespace CSharp11.Tests.UnitTests;
+
+[TestClass]
+public class AutoDefaultStructsTests
 {
-    [TestClass]
-    public class AutoDefaultStructsTests
+    [TestMethod]
+    public void AutoDefaultStructMembers_WhenNotInitialized_HaveDefaultValues()
     {
-        [TestMethod]
-        public void AutoDefaultStructMembers_WhenNotInitialized_HaveDefaultValues()
-        {
-            // Arrange
-            var sut = new AutoDefaultStructImpl();
+        // Arrange
+        var sut = new AutoDefaultStructImpl();
 
-            // Act
+        // Act
 
-            // Assert
-            Assert.AreEqual(default, sut.MyString);
-            Assert.AreEqual(default, sut.MyInt);
-            Assert.AreEqual(default, sut.MyDateTime);
-            Assert.AreEqual(default, sut.MyFloat);
-        }
+        // Assert
+        Assert.AreEqual(default, sut.MyString);
+        Assert.AreEqual(default, sut.MyInt);
+        Assert.AreEqual(default, sut.MyDateTime);
+        Assert.AreEqual(default, sut.MyFloat);
     }
 }

@@ -1,13 +1,10 @@
-﻿using System.Diagnostics;
+﻿namespace CSharp11.Tests.Helpers;
 
-namespace CSharp11.Tests.Helpers
+internal class NameOfScopeType
 {
-    internal class NameOfScopeType
+    [NameOfScope(nameof(parameterName))]
+    public void MethodWithParameter(string parameterName)
     {
-        [NameOfScope(nameof(parameterName))]
-        public void MethodWithParameter(string parameterName)
-        {
-            Debug.WriteLine(parameterName);
-        }
+        Debug.WriteLine(parameterName);
     }
 }
