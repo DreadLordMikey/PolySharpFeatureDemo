@@ -8,7 +8,7 @@ Icon|Description
 :-:|:-
 ✔️|All tests passed for this version.
 ❌|Tests failed for this version.
---|Feature not tested for this version.
+❌|Feature not tested for this version.
 
 ## Feaures and Compatibility
 
@@ -17,7 +17,7 @@ Feature                                          |4.5 |4.5.1|4.5.2|4.6 |4.6.1|4.
 [Auto default structs](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#auto-default-struct)|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 [Extended nameof scope](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#extended-nameof-scope) <sup>1</sup>|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
 [File local types](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#file-local-types)|✔️  |✔️   |✔️    |✔️  |✔️  |✔️    |✔️   |✔️  |✔️  |✔️
-[Generic attributes](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-attributes)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
+[Generic attributes](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-attributes) <sup>2</sup>|❌  |❌   |❌    |❌  |❌  |❌    |❌   |❌  |❌  |❌
 [Generic math support](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-math-support)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [Improved method group conversion to delegate](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#improved-method-group-conversion-to-delegate)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
 [List patterns](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#list-patterns)|--  |--   |--    |--  |--  |--    |--   |--  |--  |--
@@ -32,6 +32,9 @@ Feature                                          |4.5 |4.5.1|4.5.2|4.6 |4.6.1|4.
 <div style="font-size: smaller;">   
 
 <sup>1</sup> See [Extended nameof Scope](https://learn.microsoft.com/En-Us/dotnet/csharp/language-reference/proposals/csharp-11.0/extended-nameof-scope) in the *C# 11 Feature Specification* for more details.
+
+<sup>2</sup> During testing, the compiler threw an error for all versions of the .NET Framework when attempting to use a generic attribute. The specific error was `System.NotSupportedException: Generic types are not valid.
+` and it occurred during the call to [MemberInfo.GetCustomAttributes](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.memberinfo.getcustomattributes?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(System.Reflection.MemberInfo.GetCustomAttributes)%3Bk(DevLang-csharp)%26rd%3Dtrue&view=net-7.0).  See [Generic Attributes](https://learn.microsoft.com/En-Us/dotnet/csharp/language-reference/proposals/csharp-11.0/generic-attributes) in the *C# 11 Feature Specification* for more details.
 </div>
 
 <div style="display: none;">

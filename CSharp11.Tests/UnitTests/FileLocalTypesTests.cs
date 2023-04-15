@@ -1,5 +1,4 @@
 ﻿using CSharp11.Tests.Helpers;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CSharp11.Tests.UnitTests;
 
